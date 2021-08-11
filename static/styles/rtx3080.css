@@ -1,0 +1,132 @@
+#leftContent {
+  float: left;
+  width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 70px;
+}
+
+#leftImage {
+  text-align: center;
+  width: 300px;
+}
+
+#description h1 {
+  font-size: 24px;
+  display: block;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+}
+
+#router {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.35em;
+}
+
+#router a {
+  color: #000066;
+}
+
+#rightContent {
+  width: 740px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#tracker {
+  width: 740px;
+  margin-bottom: 20px;
+}
+
+#trackerHeader {
+  width: 740px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+  margin-bottom: 2px;
+}
+
+#trackerTitle {
+  width: 400px;
+  margin-bottom: 2px;
+  height: 30px;
+}
+
+#trackerTitle h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+  height: 30px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 3px;
+  border-color: grey;
+}
+
+#data td {
+  border-bottom: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+}
+
+tbody tr:hover {
+  background-color: #eeeeee;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  font-size: 14px;
+  line-height: 1.35em;
+}
+
+#rightContent a {
+  text-decoration: underline;
+  color: #000066;
+}
+
+#series ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#series li {
+  float: left;
+  width: 190px;
+  list-style-type: none;
+  height: 200px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 7px;
+  padding-right: 8px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#series li a {
+  color: #000066;
+  text-decoration: none;
+  width: 100%;
+  border: #fff solid 1px;
+  padding: 6px;
+  display: block;
+}

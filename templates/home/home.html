@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/home.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/footer.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tech Scraper</title>
+  </head>
+  <body>
+    <div class="container" id="logo">
+      <a href="/">
+        <img src="{{url_for('static',filename='img/logo.png')}}" alt="Logo">
+      </a>
+    </div>
+    <nav style="margin-bottom: 30px;" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-fill w-100 mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cellphones">Celulares</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Computadoras
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/pcs">Computadoras de Escritorio</a>
+              <a class="dropdown-item" href="/gamer-pcs">Computadoras Gamer</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/consoles">Consolas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="heading">
+        <p>Tech Scraper es un servicio web <span style="font-weight: 600;">GRATUITO</span> que supervisa las páginas web que venden productos tecnológicos, esto con la finalidad de ver cuándo los productos están en stock, 
+          para pedirlos por adelantado o para la comparación de precios entre páginas y así obtener el mejor precio</p>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="title">
+            <font color="#FF0000">Productos más demandados: <img src="{{url_for('static',filename='img/flame.png')}}" alt="flame"/></font>
+          </div>
+          <div class="products">
+            <ul>
+              <li>
+                <a href="/nvidia"><img src="{{url_for('static',filename='img/nvidia.png')}}" width="190" height="170" alt="NVIDIA GPUs" style="padding-left: 4px;padding-right: 4px;">
+                NVIDIA GPUs
+                </a>
+              </li>
+              <li>
+                <a href="/consoles/xbox-series-s"><img src="{{url_for('static',filename='img/xbox-series-s.png')}}" width="170" height="170" alt="Xbox Series S" style="padding-left: 4px;padding-right: 4px;">
+                Xbox Series S
+                </a>
+              </li>
+              <li>
+                <a href="/consoles/xbox-series-x"><img src="{{url_for('static',filename='img/xbox-series-x.png')}}" width="170" height="170" alt="Xbox Series X" style="padding-left: 4px;padding-right: 4px;">
+                Xbox Series X
+                </a>
+              </li>
+              <li>
+                <a href="/consoles/nintendo-switch"><img src="{{url_for('static',filename='img/nintendo-switch.png')}}" width="170" height="170" alt="Nintendo Switch" style="padding-left: 4px;padding-right: 4px;">
+                Nintendo Switch
+                </a>
+              </li>
+              <li>
+                <a href="/nvidia/rtx-3080"><img src="{{url_for('static',filename='img/rtx-3080.jpg')}}" width="170" height="170" alt="RTX 3080" style="padding-left: 4px;padding-right: 4px;">
+                RTX 3080
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="title">
+            <font color="#0675B6">Productos ingresados recientemente:</font>
+          </div>
+          <div class="products">
+            <ul>
+              <li>
+                <a href="/consoles/playstation-5"><img src="{{url_for('static',filename='img/playstation-5.png')}}" width="170" height="170" alt="Sony PlayStation 5" style="padding-left: 4px;padding-right: 4px;">
+                PlayStation 5
+                </a>
+              </li>
+              <li>
+                <a href="/nvidia/rtx-3070-ti"><img src="{{url_for('static',filename='img/rtx-3070-ti.jpg')}}" width="190" height="170" alt="RTX 3070 Ti" style="padding-left: 4px;padding-right: 4px;">
+                RTX 3070 Ti
+                </a>
+              </li>
+              <li>
+                <a href="/nvidia/rtx-3080-ti"><img src="{{url_for('static',filename='img/rtx-3080-ti.png')}}" width="190" height="170" alt="RTX 3080 Ti" style="padding-left: 4px;padding-right: 4px;">
+                RTX 3080 Ti
+                </a>
+              </li>
+              <li>
+                <a href="/amd/rx-6900-xt"><img src="{{url_for('static',filename='img/rx-6900-xt.jpg')}}" width="170" height="170" alt="RX 6900 XT" style="padding-left: 4px;padding-right: 4px;">
+                RX 6900 XT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="title">
+            <font color="#000066">Navegar por categorías: </font>
+          </div>
+          <div class="products">
+            <ul>
+              <li>
+                <a href="/cellphones"><img src="{{url_for('static',filename='img/cellphones.jpg')}}" width="130" height="170" alt="Celulares" style="padding-left: 4px;padding-right: 4px;">
+                Celulares
+                </a>
+              </li>
+              <li>
+                <a href="/pcs"><img src="{{url_for('static',filename='img/pcs.png')}}" width="170" height="170" alt="Computadoras de Escritorio" style="padding-left: 4px;padding-right: 4px;">
+                Computadoras de Escritorio
+                </a>
+              </li>
+              <li>
+                <a href="/gamer-pcs"><img src="{{url_for('static',filename='img/gamer-pcs.png')}}" width="150" height="170" alt="Computadoras Gamer" style="padding-left: 4px;padding-right: 4px;">
+                Computadoras Gamer
+                </a>
+              </li>
+              <li>
+                <a href="/consoles"><img src="{{url_for('static',filename='img/playstation-5.png')}}" width="190" height="170" alt="Consolas" style="padding-left: 4px;padding-right: 4px;">
+                Consolas
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="f_home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="f_h3">Tech Scraper</h3>
+            <a href="/cellphones" class="f_a">Celulares</a>
+            <a href="/pcs" class="f_a">Computadoras</a>
+            <a href="/gamer-pcs" class="f_a">Computadoras Gamer</a>
+            <a href="/consoles" class="f_a">Consolas</a>
+          </div>
+          <div class="col-md-4">
+            <h3 class="f_h3">Legal</h3>
+            <a class="f_a" href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Icons made by Vectors Market from</a><a class="f_a" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            <a class="f_a"
+              >Términos y condiciones de servicio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

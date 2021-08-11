@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/rtx3080.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tech Scraper - HUAWEI</title>
+  </head>
+  <body>
+    <div class="container" id="logo">
+        <a href="/">
+          <img src="{{url_for('static',filename='img/logo.png')}}" alt="Logo">
+        </a>
+      </div>
+      <nav style="margin-bottom: 30px;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-fill w-100 mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cellphones">Celulares</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Computadoras
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/pcs">Computadoras de Escritorio</a>
+                <a class="dropdown-item" href="/gamer-pcs">Computadoras Gamer</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/consoles">Consolas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container" style="float: left;">
+        <div id="router">
+            <a href="/">Inicio</a>
+            »
+            <a href="/cellphones">Celulares</a>
+            » 
+            Huawei
+        </div>
+          <div id="leftContent">
+            <div id="leftImage">
+                <img src="{{url_for('static',filename='img/huawei.jpg')}}" alt="Huawei" width="200" height="250">
+            </div>
+            <div id="description">
+                <h1>Huawei</h1>
+            </div>
+          </div>
+          <div id="rightContent">
+              <div id="tracker">
+                <div id="trackerHeader">
+                    <div id="trackerTitle">
+                        <h3>Huawei</h3>
+                    </div>
+                </div>
+                <div id="trackerContent">
+                    <div id="data">
+                        <table width="1000">
+                            <thead>
+                                <tr bgcolor="#CCCCCC">
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col" width="140">Existencias</th>
+                                    <th scope="col" width="100">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for element in data %}
+                                <tr>
+                                    <td><a href="{{element.link}}">{{element.name}}: {{element.provider}}</a></td>
+                                    <td align="center">{{element.stock}}</td>
+                                    <td align="right">{{element.price}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

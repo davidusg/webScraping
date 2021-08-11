@@ -1,0 +1,35 @@
+.f_home {
+  padding: 50px 102px;
+  margin-top: 50px;
+  width: 100%;
+  float: left;
+  background-color: #f2f2f2 !important;
+}
+
+.f_h3 {
+  font-size: 1.273em !important;
+  font-weight: bold !important;
+  line-height: 1.43 !important;
+  text-transform: none !important;
+  text-rendering: optimizelegibility !important;
+  color: rgba(0, 0, 0, 0.89) !important;
+  margin-bottom: 12px !important;
+}
+
+.f_a {
+  display: block !important;
+  box-sizing: border-box !important;
+  color: rgba(0, 0, 0, 0.62) !important;
+  margin: 12px 0 !important;
+  font-size: 0.95em !important;
+  line-height: 1.4em !important;
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  text-rendering: optimizelegibility !important;
+  text-decoration: none !important;
+}
+
+.f_a:hover {
+  text-decoration: underline !important;
+}
